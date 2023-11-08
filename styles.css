@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roboto';
+	-webkit-text-fill-color: #170312;
+	background-color: #E5F2C9;
+}
+
+.root {
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: auto auto 1fr;
+	padding-bottom: 10px;
+	box-sizing: border-box;
+}
+
+.header {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	justify-items: center;
+	box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.637);
+	z-index: 3;
+}
+
+.logo {
+	background-color: #e3eb99;
+	padding: 20px;
+}
+
+.navbar {
+	display: grid;
+	margin: 12px 10px 10px 15px;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 15px;
+	box-sizing: content-box;
+}
+
+.navbar-item {
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 10px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	background-color: #5f7ee5;
+  	--s: 0.5em;   /* the thickness of the line */
+	--c: #1095c1; /* the color */
+	color: #0000;
+	padding-bottom: var(--s);
+	background: 
+		linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+		linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+	-webkit-background-clip: text,padding-box;
+			background-clip: text,padding-box;
+	transition: 0.5s;
+}
+
+.navbar-item:hover {
+  --_p: 100%
+}
+
+
+.logo-img {
+	width: 50px;
+	height: 50px;
+}
+
+.sidebar {
+	max-width: 140px;
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+	gap: 5px;
+	margin-left: 5px;	
+}
+
+.sidebar-item {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	background-color: #83d9e1;
+	padding: 10px 0px;
+	border: 1px solid;
+	border-radius: 10px;
+}
+
+.sidebar-item > p {
+	margin: 0px;
+	padding: 0px;
+}
+
+.sidebar-item:hover {
+	background: #E5F2C9;
+}
+
+.main {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+}
+
+.content {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+}
+
+.login {
+	min-height: 300px;
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	align-items: center;
+}
+
+.login-heading {
+	grid-column: span 2;
+}
+
+.field {
+	grid-column: span 2;
+	display: grid;
+	grid-auto-flow: column;
+	align-items: center;
+	gap: 15px;
+}
+
+.login button {
+	padding: 15px;
+	border: none;
+	border-radius: 10px;
+	background-color: #5f7ee5;
+	-webkit-text-fill-color: antiquewhite;
+	font-family: inherit;
+}
+
+
+
+
+
