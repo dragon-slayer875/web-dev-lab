@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registration</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div class="root">
+            <div class="header">
+                <div class="logo">
+                    <img src="tauri.svg" class="logo-img" />
+                </div>
+                <div class="heading">ABESEC</div>
+            </div>
+            <div class="navbar">
+                <div class="navbar-item" id="index"><span>Home</span></div>
+                <div class="navbar-item" id="login"><span>Login</span></div>
+                <div class="navbar-item nav-active" id="registration">
+                    <span>Registration</span>
+                </div>
+                <div class="navbar-item" id="catalogue">
+                    <span>Catalogue</span>
+                </div>
+                <div class="navbar-item" id="cart"><span>Cart</span></div>
+            </div>
+            <div class="main">
+                <div class="sidebar">
+                    <div class="sidebar-item"><p>CSE</p></div>
+                    <div class="sidebar-item"><p>ECE</p></div>
+                    <div class="sidebar-item"><p>EEE</p></div>
+                    <div class="sidebar-item"><p>CIVIL</p></div>
+                </div>
+                <div class="content">
+                    <div class="form">
+                        <form action="" method="post">
+                            <div class="form-item">
+                                <label for="name">Name</label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    placeholder="Enter your name"
+                                    required
+                                />
+                            </div>
+                            <div class="form-item">
+                                <label for="email">Email</label>
+                                <input
+                                    type="text"
+                                    name="email"
+                                    id="email"
+                                    placeholder="Enter your email"
+                                    required
+                                />
+                            </div>
+                            <div class="form-item">
+                                <label for="password">Password</label>
+                                <input
+                                    type="password"
+                                    name="password"
+                                    id="password"
+                                    placeholder="Enter your password"
+                                    required
+                                />
+                            </div>
+                            <div class="form-item">
+                                <label for="confirm-password"
+                                    >Confirm Password</label
+                                >
+                                <input
+                                    type="password"
+                                    name="confirm-password"
+                                    id="confirm-password"
+                                    placeholder="Confirm your password"
+                                    required
+                                />
+                            </div>
+                            <div class="form-item">
+                                <label for="phone">Phone</label>
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    id="phone"
+                                    placeholder="Enter your phone number"
+                                    required
+                                />
+                            </div>
+                            <div class="form-item">
+                                <label for="address">Address</label>
+                                <textarea
+                                    name="address"
+                                    id="address"
+                                    cols="30"
+                                    rows="10"
+                                    placeholder="Enter your address"
+                                    required
+                                ></textarea>
+                            </div>
+                            <div class="form-item">
+                                <label for="dob">Date of Birth</label>
+                                <select name="date" id="date">
+                                    <option value="" disabled selected>
+                                        DD
+                                    </option>
+                                </select>
+                                <select name="month" id="month">
+                                    <option value="" disabled selected>
+                                        MM
+                                    </option>
+                                </select>
+                                <select name="year" id="year">
+                                    <option value="" disabled selected>
+                                        YYYY
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-item">
+                                <label>Sex</label>
+                                <div class="radio-item">
+                                    <input
+                                        type="radio"
+                                        id="male"
+                                        name="sex"
+                                        value="male"
+                                        required
+                                    />
+                                    <label for="male">Male</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input
+                                        type="radio"
+                                        id="female"
+                                        name="sex"
+                                        value="female"
+                                        required
+                                    />
+                                    <label for="female">Female</label>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label>Languages Known</label>
+                                <div>
+                                    <input type="checkbox" id="english" name="languages" value="english">
+                                    <label for="english">English</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="telugu" name="languages" value="telugu">
+                                    <label for="telugu">Telugu</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="hindi" name="languages" value="hindi">
+                                    <label for="hindi">Hindi</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="tamil" name="languages" value="tamil">
+                                    <label for="tamil">Tamil</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
