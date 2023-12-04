@@ -6,6 +6,7 @@
         <title>Registration</title>
         <link rel="stylesheet" href="styles.css" />
         <script src="script.js" defer></script>
+        <script src="reg.js" defer></script>
     </head>
 
     <body>
@@ -36,13 +37,15 @@
                 </div>
                 <div class="content">
                     <div class="form">
-                        <form action="" method="post">
+                        <form id="form" action="" method="post">
                             <div class="form-item">
                                 <label for="name">Name</label>
                                 <input
                                     type="text"
                                     name="name"
                                     id="name"
+                                    minlength="6"
+                                    pattern="[A-Za-z ]+"
                                     placeholder="Enter your name"
                                     required
                                 />
@@ -63,6 +66,7 @@
                                     type="password"
                                     name="password"
                                     id="password"
+                                    minlength="6"
                                     placeholder="Enter your password"
                                     required
                                 />
@@ -85,6 +89,9 @@
                                     type="tel"
                                     name="phone"
                                     id="phone"
+                                    minlength="10"
+                                    maxlength="10"
+                                    pattern="[0-9]+"
                                     placeholder="Enter your phone number"
                                     required
                                 />
