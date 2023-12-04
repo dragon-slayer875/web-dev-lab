@@ -203,3 +203,67 @@ body {
 .cart-item {
     background-color: rgb(255, 248, 248);
 }
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 25px;
+    align-items: start;
+}
+
+.form-item {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
+    gap: 5px;
+}
+
+.form-item > label {
+    font-weight: bold;
+}
+
+.form-item > input {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff5fc;
+}
+
+textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff5fc;
+    resize: none;
+}
+
+
+.form-item:nth-child(9),.form-item:nth-child(10) {
+    grid-column: span 2;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.form-item > button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #5f7ee5;
+    -webkit-text-fill-color: antiquewhite;
+    font-family: inherit;
+}
+
+.form-item > button:hover {
+    background-color: #1095c1;
+}
+
+
+
+
+
+

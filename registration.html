@@ -95,7 +95,7 @@
                                     name="address"
                                     id="address"
                                     cols="30"
-                                    rows="10"
+                                    rows="3"
                                     placeholder="Enter your address"
                                     required
                                 ></textarea>
@@ -120,45 +120,72 @@
                             </div>
                             <div class="form-item">
                                 <label>Sex</label>
-                                <div class="radio-item">
-                                    <input
-                                        type="radio"
-                                        id="male"
-                                        name="sex"
-                                        value="male"
-                                        required
-                                    />
-                                    <label for="male">Male</label>
-                                </div>
-                                <div class="radio-item">
-                                    <input
-                                        type="radio"
-                                        id="female"
-                                        name="sex"
-                                        value="female"
-                                        required
-                                    />
-                                    <label for="female">Female</label>
+                                <div class="radio-items">
+                                    <div class="radio-item">
+                                        <input
+                                            type="radio"
+                                            id="male"
+                                            name="sex"
+                                            value="male"
+                                            required
+                                        />
+                                        <label for="male">Male</label>
+                                    </div>
+                                    <div class="radio-item">
+                                        <input
+                                            type="radio"
+                                            id="female"
+                                            name="sex"
+                                            value="female"
+                                            required
+                                        />
+                                        <label for="female">Female</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-item">
                                 <label>Languages Known</label>
-                                <div>
-                                    <input type="checkbox" id="english" name="languages" value="english">
-                                    <label for="english">English</label>
+                                <div class="options">
+                                    <div>
+                                        <input
+                                            type="checkbox"
+                                            id="english"
+                                            name="languages"
+                                            value="english"
+                                        />
+                                        <label for="english">English</label>
+                                    </div>
+                                    <div>
+                                        <input
+                                            type="checkbox"
+                                            id="telugu"
+                                            name="languages"
+                                            value="telugu"
+                                        />
+                                        <label for="telugu">Telugu</label>
+                                    </div>
+                                    <div>
+                                        <input
+                                            type="checkbox"
+                                            id="hindi"
+                                            name="languages"
+                                            value="hindi"
+                                        />
+                                        <label for="hindi">Hindi</label>
+                                    </div>
+                                    <div>
+                                        <input
+                                            type="checkbox"
+                                            id="tamil"
+                                            name="languages"
+                                            value="tamil"
+                                        />
+                                        <label for="tamil">Tamil</label>
+                                    </div>
                                 </div>
-                                <div>
-                                    <input type="checkbox" id="telugu" name="languages" value="telugu">
-                                    <label for="telugu">Telugu</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="hindi" name="languages" value="hindi">
-                                    <label for="hindi">Hindi</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="tamil" name="languages" value="tamil">
-                                    <label for="tamil">Tamil</label>
-                                </div>
+                            </div>
+                            <div class="form-item">
+                                <button type="submit">Submit</button>
                             </div>
                         </form>
                     </div>
