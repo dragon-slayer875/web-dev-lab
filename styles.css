@@ -143,8 +143,10 @@ body {
 .catalogue {
     display: grid;
     gap: 15px;
+    padding: 35px;
     max-height: 700px;
-    min-width: 1500px;
+    width: 100%;
+    max-width: 1200px;
     overflow: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
